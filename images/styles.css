@@ -36,7 +36,7 @@ body {
     align-items: center;
     background-color: var(--colorCinco); 
     padding: 15px 0; 
-    border-bottom: 1px solid #e0e0e0;
+    
 }
 
 .navbar__logo{
@@ -81,18 +81,28 @@ ul li:last-child a{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto; 
-    min-height: 80vh; 
+    min-height: 80vh;
+    background-color: var(--colorUno); 
+   
 }
 
 
 .header-section {
     flex: 2; 
-    background-color: var(--colorUno); 
     display: flex;
     flex-direction: column;
     justify-content: flex-start; 
     padding: 40px 0 40px 60px; 
     box-sizing: border-box;
+    
+}
+.image-section{
+    
+    margin: 40px;
+
+}
+.container_logo .start-button{
+    background-color: white;
 }
 
 .logo {
@@ -113,8 +123,9 @@ ul li:last-child a{
     font-size: 1.5vw;
     font-weight: 400;
     padding: 15px 15px; 
-    margin: 0;
-    align-self: flex-start; 
+    align-self: flex-start;
+    
+ 
 }
 
 .start-button {
@@ -144,6 +155,7 @@ ul li:last-child a{
     display: block;
     transform: none; 
 }
+
 .about {
     background-color: var(--colorCinco);
     padding: 60px 0;
@@ -233,8 +245,17 @@ ul li:last-child a{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-}
 
+}
+.text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;        
+    height: 400px;   
+    text-align: center;         
+ 
+    
+}
 .service {
     background-color: var(--colorCinco);
     border-radius: 10px;
@@ -245,6 +266,7 @@ ul li:last-child a{
     flex-direction: column;
     align-items: center;
 }
+
 
 .service img {
     width: 100%;
@@ -304,5 +326,288 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+/*Seccion APP*/
+.app-section {
+  background-color: var(--colorCinco);
+  padding: 60px 0;
+  font-family: var(--fuenteSecundaria);
+}
+
+.app__container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 200px; 
+
+}
+
+.app__image img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.app__content {
+  text-align: center;
+}
+
+.app__title {
+  font-size: 2rem;
+  color: var(--colorSeis);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.app__description {
+  font-size: 1rem;
+  color: var(--colorSeis);
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.app__buttons img {
+  width: 140px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.app__buttons img:hover {
+  transform: scale(1.05);
+}
 
 
+/*Seccion Contact*/
+.contact{
+display: flex;
+justify-content: center;
+overflow: hidden;
+flex-direction: column;
+}
+.map{
+display: flex;
+gap:120px;
+width: 100%;
+background-color: #65E594;
+}
+.heading__1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color:#76D7A8;
+}
+.container__for{
+    background-color: white;
+    align-items: center;
+    
+}
+.map{
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container__for{
+    margin: 20px;
+    padding: 40px;
+   
+}
+.contact__title{
+    margin-top: 0%;
+}
+/*footer*/
+.footer{
+    background-color: white;
+}
+.footer__container{
+display: flex;
+gap:120px;
+width:100%;
+margin: 20px;
+
+}
+.footer__social {
+    display:flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.footer__social h3{
+    font-size: 18px;
+}
+.footer__servicios{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.logo{
+width:100px;
+height: auto;
+}
+.links{
+    list-style-type: disc;
+    display: block;
+    margin-top: 2px;
+}
+/*Media Query*/
+@media (max-width: 768px) {
+    
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    
+    .navbar__container {
+        flex-direction: row; 
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    ul li a {
+        font-size: 0.9rem;
+    }
+
+    .container_logo {
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .header-section {
+        padding: 20px;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 8vw;
+        width: 80px;
+    }
+
+    .tagline {
+        font-size: 4vw;
+        padding: 10px;
+    }
+
+    .start-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
+
+    .image-section {
+        width: 100%;
+        flex: none;
+        margin-top: 20px;
+    }
+
+    .main-image {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .about__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__left,
+    .about__right {
+        width: 100%;
+    }
+
+    .services__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 90%;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .map {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .heading__1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container__for {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer__social {
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+
+    .footer__servicios {
+        align-content: center;
+    }
+    .app__container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .app__content {
+    text-align: left;
+    max-width: 50%;
+  }
+
+  .app__description {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .app__image {
+    max-width: 40%;
+  }
+}
