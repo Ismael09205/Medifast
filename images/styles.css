@@ -472,142 +472,155 @@ height: auto;
 }
 /*Media Query*/
 @media (max-width: 768px) {
-    
-    .container {
-        width: 95%;
-        padding: 0 10px;
-    }
+  .container {
+    width: 95%;
+    padding: 0 10px;
+  }
 
-    
-    .navbar__container {
-        flex-direction: row; 
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    ul {
-        flex-direction: column;
-        width: 100%;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    ul li a {
-        font-size: 0.9rem;
-    }
-
-    .container_logo {
-        align-items: center;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .header-section {
-        padding: 20px;
-        align-items: center;
-    }
-
-    .logo {
-        font-size: 8vw;
-        width: 80px;
-    }
-
-    .tagline {
-        font-size: 4vw;
-        padding: 10px;
-    }
-
-    .start-button {
-        font-size: 1rem;
-        padding: 10px 20px;
-        margin-top: 20px;
-    }
-
-    .image-section {
-        width: 100%;
-        flex: none;
-        margin-top: 20px;
-    }
-
-    .main-image {
-        height: 250px;
-        object-fit: cover;
-    }
-
-    .about__content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about__left,
-    .about__right {
-        width: 100%;
-    }
-
-    .services__container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service {
-        width: 90%;
-    }
-
-    .contact {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .map {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .heading__1 {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .container__for {
-        width: 90%;
-        padding: 20px;
-    }
-
-    .footer__container {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        text-align: center;
-    }
-
-    .footer__social {
-        justify-content: center;
-        font-size: 1.5rem;
-    }
-
-    .footer__servicios {
-        align-content: center;
-    }
-    .app__container {
-    flex-direction: row;
+  /* NAVBAR */
+  .navbar__container {
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  ul li a {
+    font-size: 1rem;
+  }
+
+  /* HEADER / PORTADA */
+  .container_logo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .header-section {
+    padding: 20px;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 9vw;
+  }
+
+  .tagline {
+    font-size: 4.5vw;
+    padding: 10px 15px;
+    border-radius: 6px;
+  }
+
+  .start-button {
+    font-size: 1rem;
+    padding: 10px 25px;
+    margin-top: 20px;
+  }
+
+  .image-section {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .main-image {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  /* ABOUT */
+  .about__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .about__left,
+  .about__right {
+    width: 90%;
+  }
+
+  /* SERVICES */
+  .services__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .service {
+    width: 90%;
+  }
+
+  /* APP SECTION */
+  .app__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
   }
 
   .app__content {
-    text-align: left;
-    max-width: 50%;
+    max-width: 100%;
   }
 
   .app__description {
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 auto;
   }
 
   .app__image {
-    max-width: 40%;
+    max-width: 80%;
+  }
+
+  /* CONTACTO */
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .map {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .heading__1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .container__for {
+    width: 90%;
+    padding: 20px;
+  }
+
+  /* FOOTER */
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer__social {
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+
+  .footer__servicios {
+    align-items: center;
   }
 }
+
