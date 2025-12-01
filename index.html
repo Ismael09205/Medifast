@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medifast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="./images/medicina.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Start - Section Header -->
+  <header class="container">
+    <nav class="navbar__container">
+      <h1 class="navbar__logo">Medifast<span class="navabar__logo--primary"></span></h1>
+      <ul>
+        <li><a href="#contacto">Contactanos</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#app">App</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- End - Section Header -->
+
+  <!-- Start - Section Main -->
+  <main class="hero">
+    <div class="container_logo">
+      <div class="header-section">
+        <div class="text-content">
+          <p class="tagline">Tu salud, siempre a la vuelta de la esquina</p>
+          <a href="#servicios" class="start-button">Empezar</a>
+        </div>
+      </div>
+      <div class="image-section">
+        <img src="./images/medicos_trabajando.PNG" class="main-image" alt="Profesional de salud con estetoscopio">
+      </div>
+    </div>
+  </main>
+  <!-- End - Section Main -->
+
+  <!-- Start - Section About -->
+  <section id="about" class="about">
+    <h2>Sobre nosotros</h2>
+
+    <div class="about__content">
+      <div class="about__left">
+        <img src="./images/perchero.PNG" alt="Farmacéutico atendiendo cliente" loading="lazy">
+        <p>Creemos que la salud no puede esperar. Por eso hemos creado una plataforma sencilla y confiable que conecta a las personas con las farmacias más cercanas que tienen disponible el medicamento que necesitan.</p>
+        <a href="#about" class="button service__info">Más información</a>
+      </div>
+
+      <div class="about__right">
+        <img src="./images/Captura.PNG" alt="Farmacéutico viendo a la cámara" loading="lazy">
+        <p>
+          Pagina que simplifica la búsqueda de medicamentos cerca de ti. Solo ingresa el nombre del medicamento que necesitas
+          y nosotros te mostraremos qué farmacias cercanas lo tienen disponible.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- End - Section About -->
+
+  <!-- Start - Section Services -->
+  <section id="servicios" class="services">
+    <h2 class="services__title">Servicios</h2>
+    <article class="container">
+      <h4 class="services__subtitle">Ofrecemos acceso rápido y seguro a los medicamentos que necesitas.</h4>
+
+      <div class="services__container">
+        <div class="service">
+          <img src="./images/buscando_medicina.PNG" alt="Imagen de búsqueda de medicamento" loading="lazy">
+          <p class="service__text">Verifica las faracias que tienen lo que necesitas</p>
+          <a href="#" class="button service__button">Más información</a>
+        </div>
+        <div class="service">
+          <img src="./images/percha.PNG" alt="Imagen de disponibilidad en stock" loading="lazy">
+          <p class="service__text">Verifica la disponibilidad en stock antes de salir.</p>
+          <a href="#" class="button service__button">Más información</a>
+        </div>
+        <div class="service">
+          <img src="./images/vendedora.PNG" alt="Imagen de acceso rápido" loading="lazy">
+          <p class="service__text">Evita recorridos innecesarios y agiliza tu compra.</p>
+          <a href="#" class="button service__button">Más información</a>
+        </div>
+      </div>
+    </article>
+  </section>
+  <!-- End - Section Services -->
+
+  <!-- Start - Section App -->
+  <section id="app" class="app-section">
+    <div class="app__container">
+      <div class="app__image">
+        <img src="./images/logomedifast.jpg" alt="Imagen de la app en celular" loading="lazy">
+      </div>
+      <div class="app__content">
+        <h2 class="app__title">Descarga la aplicación</h2>
+        <p class="app__description">
+          Con nuestra app, puedes reservar y comprar medicinas según tus necesidades, tiempo, dinero y distancia.
+          Además, puedes encontrar farmacias cercanas, recibir alertas de disponibilidad y hacer seguimiento a tus pedidos en tiempo real.
+        </p>
+        <div class="app__buttons">
+          <a href="https://www.apple.com/la/app-store/" target="_blank">
+            <img src="./images/appstore.png" alt="App Store">
+          </a>
+          <a href="https://play.google.com/store/games?hl=es" target="_blank">
+            <img src="./images/googleplay.png" alt="Google Play">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End - Section App -->
+
+  <!-- Start - Section Contact -->
+  <section id="contacto" class="contact">
+    <div class="heading__1">
+      <h2 class="search">Contactate con nosotros</h2>
+    </div>
+    <div class="map">
+      <div class="container__for">
+        <h2 class="contact__title">¿Tienes algún reclamo o pregunta?</h2>
+        <form>
+          <div class="formulario">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="correo" placeholder="Correo" required>
+            <input type="tel" name="celular" placeholder="Celular" required>
+            <textarea name="observaciones" placeholder="Observaciones" rows="4"></textarea>
+            <label class="checkbox__label">
+              <input type="checkbox" required>
+              Términos y condiciones
+            </label>
+            <button type="submit" class="btn button">Enviar</button>
+          </div>
+        </form>
+      </div>
+      <div class="contact__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7914470805003!2d-78.49152538255609!3d-0.2102913999999967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a107e1cd44b%3A0x88a284f66939ed4!2sESCUELA%20POLIT%C3%89CNICA%20NACIONAL!5e0!3m2!1ses-419!2sec!4v1762665551348!5m2!1ses-419!2sec"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+  <!-- End - Section Contact -->
+
+  <!-- Start - Section Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__social">
+        <img src="./images/logomedifast.jpeg" alt="Logo" class="logo">
+        <h3>Tu medicina, más cerca de lo que imaginas </h3>
+        <div class="social__icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__servicios">
+        <h3>Servicios</h3>
+        <ul class="links">
+          <li>Políticas de privacidad</li>
+          <li>Centro de ayuda</li>
+          <li>Consultas y reclamos</li>
+        </ul>
+      </div>
+
+      <div class="footer__contact">
+        <h3>Contactanos</h3>
+        <p class="call">(593) 0924111307</p>
+        <p class="write">medifast@gmail.com</p>
+      </div>
+    </div>
+
+    <hr/>
+    <p class="footer__copy">© Derechos Reservados - Equipo de desarrolladores MediFast</p>
+  </footer>
+  <!-- End - Section Footer -->
+
+</body>
+</html>
