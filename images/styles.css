@@ -159,7 +159,6 @@ ul li:last-child a{
 .tagline {
     font-size: 32px;
     font-weight: 600;
-    background-color:#52CA76;
     
 }
 
@@ -686,3 +685,4 @@ height: auto;
     align-items: center;
   }
 }
+
