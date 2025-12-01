@@ -244,6 +244,7 @@ ul li:last-child a{
 
 .about__left button {
     background-color: var(--colorCuatro);
+    border: solid red;
     border: none;
     color: var(--colorSeis);
     font-weight: bold;
@@ -671,3 +672,5 @@ height: auto;
     align-items: center;
   }
 }
+
+
